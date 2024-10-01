@@ -32,7 +32,7 @@ export const Card = React.memo(
     />
     <div
       className={cn(
-        "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
+        "absolute inset-0 bg-black/50 flex items-end py-4 px-4 transition-opacity duration-300",
         hovered === index ? "opacity-100" : "opacity-0"
       )}
     >
@@ -58,7 +58,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 px-4 md:grid-cols-4 gap-10 max-w-6xl py-28 md:py-32 md:max-w-7xl mx-auto md:px-8 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-6xl py-28 md:py-16 md:max-w-7xl mx-auto md:px-1 w-full">
       {cards.map((card, index) => (
         <Card
           key={card.title}

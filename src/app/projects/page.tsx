@@ -1,8 +1,10 @@
+'use client'
 import Nav from "@/components/Nav";
 import { FocusCards } from "@/components/ui/focus-cards";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import learnify from '@/public/assets/learnify.png'
 
-function FocusCardsDemo() {
+function Projects() {
   const cards = [
     {
       title: "Learnify",
@@ -42,11 +44,16 @@ function FocusCardsDemo() {
     },
   ];
 
+  const words = [
+    {text:"Projects"}
+  ]
+
   return (
-    <div className="">
+    <div className="pt-20 md:pt-32 bg-gradient-to-r from-black to-neutral-800 max-h-fit">
+      <div className="px-52 text-6xl font-bold"><TypewriterEffect words={words}/></div>
       <Nav /> <FocusCards cards={cards} />
     </div>
   );
 }
 
-export default FocusCardsDemo;
+export default Projects;
