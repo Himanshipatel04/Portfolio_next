@@ -28,8 +28,7 @@ import zustand from "@/public/assets/zustand.png";
 import django from "@/public/assets/django.webp";
 import firebase from "@/public/assets/firebase.png";
 import next from "@/public/assets/nextjs.png";
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-import Nav from "@/components/Nav";
+import { TypewriterEffect } from "./ui/typewriter-effect";
 
 // Frameworks
 const frameworks = [
@@ -78,11 +77,10 @@ const tools = [
 
 const words = [{ text: "Skills" }];
 
-function Page() {
+function Skills() {
   return (
     <div className="flex px-10 pt-10 md:px-52 flex-col w-full ">
-      <Nav/>
-      <div className="mt-20 text-7xl text-start font-bold">
+      <div className=" text-7xl text-start font-bold">
         <TypewriterEffect words={words} />
       </div>
       <div className="mt-16">
@@ -140,4 +138,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Skills;

@@ -45,7 +45,7 @@ function Projects() {
   ];
 
   const words = [
-    {text:"Projects"}
+    {text: "Projects" }
   ]
 
   return (

@@ -2,6 +2,7 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Projects from "./projects/page";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -9,8 +10,9 @@ export default function Home() {
       <Nav />
       <div>
         <Hero />
-        <Experience/>
-        <Projects/>
+        <Experience />
+        <Projects />
+        <Skills />
       </div>
     </div>
   );
