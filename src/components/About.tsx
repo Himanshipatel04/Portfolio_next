@@ -4,13 +4,16 @@ import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import Nav from "@/components/Nav";
+// import Nav from "@/components/Nav";
+import { TypewriterEffect } from "./ui/typewriter-effect";
+
+const words = [{text:"About"},{text:"Me"}]
 
 function page() {
   return (
-    <div className="h-fit min-h-screen">
-      <Nav />
-      <TracingBeam className="px-6 mt-36">
+    <div className="h-fit">
+     <div className="text-center mt-20"> <TypewriterEffect words={words} /></div>
+      <TracingBeam className="px-6 mt-20">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">

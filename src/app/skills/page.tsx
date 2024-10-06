@@ -25,7 +25,7 @@ import tailwind from "@/public/assets/tailwind.png";
 import chakra from "@/public/assets/chakra.png";
 import jwt from "@/public/assets/jwt.png";
 import zustand from "@/public/assets/zustand.png";
-import django from "@/public/assets/django.webp";
+import django from "@/public/assets/django.png";
 import firebase from "@/public/assets/firebase.png";
 import next from "@/public/assets/nextjs.png";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
