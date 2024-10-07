@@ -80,13 +80,13 @@ const words = [{ text: "Skills" }];
 function Skills() {
   return (
     <div className="flex px-10 pt-10 md:px-52 flex-col w-full ">
-      <div className=" text-7xl text-start font-bold">
+      <div className=" text-7xl text-center font-bold">
         <TypewriterEffect words={words} />
       </div>
       <div className="mt-16">
         {/* Frameworks Section */}
         <div className="flex flex-col gap-6">
-          <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 italic">
+          <p className="text-4xl font-bold  italic">
             Frameworks
           </p>
           <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-10 items-center justify-center w-full">
@@ -96,40 +96,40 @@ function Skills() {
 
         {/* Databases Section */}
         <div className="flex flex-col gap-6 mt-12">
-          <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 italic">
+          <p className="text-4xl font-bold italic">
             Databases
           </p>
-          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-20 items-center justify-center w-full">
+          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-10 items-center justify-center w-full">
             <AnimatedTooltip items={databases} />
           </div>
         </div>
 
         {/* Programming Languages Section */}
         <div className="flex flex-col gap-6 mt-12">
-          <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 italic">
+          <p className="text-4xl font-bold  italic">
             Programming Languages
           </p>
-          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-20 items-center justify-center w-full">
+          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-10 items-center justify-center w-full">
             <AnimatedTooltip items={programmingLanguages} />
           </div>
         </div>
 
         {/* Data Science Section */}
         <div className="flex flex-col gap-6 mt-12">
-          <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 italic">
+          <p className="text-4xl font-bold italic">
             Data Science
           </p>
-          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-20 items-center justify-center w-full">
+          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-10 items-center justify-center w-full">
             <AnimatedTooltip items={dataScience} />
           </div>
         </div>
 
         {/* Tools Section */}
         <div className="flex flex-col gap-6 mt-12 mb-10">
-          <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500 italic">
+          <p className="text-4xl font-bold  italic">
             Tools
           </p>
-          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-20 items-center justify-center w-full">
+          <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-10 items-center justify-center w-full">
             <AnimatedTooltip items={tools} />
           </div>
         </div>

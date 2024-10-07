@@ -11,19 +11,19 @@ const words = [{text:"About"},{text:"Me"}]
 
 function page() {
   return (
-    <div className="h-fit">
-     <div className="text-center mt-20"> <TypewriterEffect words={words} /></div>
-      <TracingBeam className="px-6 mt-20">
-        <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+    <div className="h-fit px-2 md:px-0">
+     <div className="text-center mt-10 md:mt-20"> <TypewriterEffect words={words} /></div>
+      <TracingBeam className="px-6 mt-10 md:mt-20">
+        <div className="max-w-2xl mx-auto antialiased px-2 pt-4 relative">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
-              <h2 className="bg-black text-white rounded-full text-xl w-fit px-4 py-1 mb-4">
+              <h2 className="bg-black text-white rounded-full text-xl italic w-fit px-4 py-3 mb-4">
                 {item.badge}
               </h2>
 
-              <p className={twMerge("text-xl mb-4")}>{item.title}</p>
+              {/* <p className={twMerge("text-xl  mb-4")}>{item.title}</p> */}
 
-              <div className="text-sm  prose prose-sm dark:prose-invert">
+              <div className="text-md">
                 {item?.image && (
                   <Image
                     src={item.image}

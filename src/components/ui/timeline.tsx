@@ -46,7 +46,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full bg-white dark:bg-gradient-to-b dark:from-black dark:to-neutral-800 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl px-4 mx-auto pt-20">
+      <div className="max-w-7xl px-4 mx-auto mt-20">
         <h2 className="text-4xl py-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-500 md:text-6xl mb-4  font-bold max-w-4xl">
           <TypewriterEffectSmooth words={words} />
         </h2>
@@ -56,7 +56,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10  md:gap-10"
+            className="flex justify-start pt-4 md:pt-10  md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full dark:bg-gradient-to-b dark:from-black dark:to-neutral-800 flex items-center justify-center">
