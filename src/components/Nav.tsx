@@ -1,14 +1,23 @@
-'use client'
+'use client';
 import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // For menu icons
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; 
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  if (!isMounted) {
+    return null; // Prevents server-client mismatch
+  }
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-gray-900 to-black text-gray-500">
@@ -17,14 +26,13 @@ const Nav = () => {
           <span className="text-violet-500">&lt;</span> Himanshi{" "}
           <span className="text-pink-500">&gt;</span>
         </Link>
-        {/* Drawer for mobile view */}
+
         <div className="md:hidden">
           <button onClick={toggleDrawer} aria-label="Toggle menu">
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
 
-        {/* Normal Menu for larger screens */}
         <div className="hidden md:flex justify-center items-center gap-10 text-2xl font-semibold text-gray-500 italic">
           <Link href={"/about"}>About</Link>
           <Link href={"/skills"}>Skills</Link>
@@ -34,7 +42,6 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* Drawer for mobile screens */}
       {isOpen && (
         <div className="md:hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-90 text-2xl font-semibold text-gray-500 italic">
           <div className="flex flex-col gap-8">

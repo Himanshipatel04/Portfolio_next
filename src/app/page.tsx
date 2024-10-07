@@ -1,7 +1,7 @@
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import Projects from "./projects/page";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import About from "@/components/About"
 
