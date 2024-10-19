@@ -58,7 +58,7 @@ const dummyContent = [
           using React, MongoDB, and Next.js.
         </p>
         <p>
-          I'm excited about advancing in my career, learning more about AI
+          I&apos;m excited about advancing in my career, learning more about AI
           integration, and contributing to projects that make a difference.
         </p>
       </>
@@ -109,13 +109,13 @@ const dummyContent = [
       <>
         <p>
           I’m an avid reader and enjoy writing on a variety of topics that spark
-          my curiosity. <br /> I've explored books like
+          my curiosity. <br /> I&apos;ve explored books like
           <em> The Almanack of Naval Ravikant</em>, <em>Atomic Habits</em>,{" "}
           <em>Sapiens</em>, and <em>The Subtle Art </em>, which have deepened my
           interest in personal growth and understanding human behavior.
         </p>
         <p>
-          In addition to reading, I'm passionate about learning more about{" "}
+          In addition to reading, I&apos;m passionate about learning more about{" "}
           <strong>finance</strong> and staying updated on the latest{" "}
           <strong>tech innovations</strong>. I’m always on the lookout for new
           opportunities in the tech space that challenge me to grow both
