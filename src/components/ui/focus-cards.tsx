@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import Link from "next/link";
 // Define the Card type to specify the expected structure of the card object
 type CardProps = {
   title: string;
-  src: string; // Change this to string if the source is a URL, or keep it as {} if it's an object
+  src: string | StaticImageData; // Accept both string and StaticImageData
   tech: string;
   url?: string;
 };
