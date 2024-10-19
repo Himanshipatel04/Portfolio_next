@@ -39,7 +39,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-  const [currentIndex, setCurrentIndex] = useState(0); // Current index is tracked
+  const [_, setCurrentIndex] = useState(0); // Current index is tracked
 
   useEffect(() => {
     if (carouselRef.current) {
