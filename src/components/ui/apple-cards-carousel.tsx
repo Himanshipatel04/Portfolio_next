@@ -280,7 +280,7 @@ export const BlurImage = ({
     <Image
       className={cn(
         "transition duration-300",
-        isLoading ? "blur-sm" : "blur-0",
+        isLoading ? "blur-sm" : "blur-sm",
         className
       )}
       onLoad={() => setLoading(false)}
@@ -290,7 +290,7 @@ export const BlurImage = ({
       loading="lazy"
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
-      alt={alt ? alt : "Background of a beautiful view"}
+      alt={alt ? alt : "Project images"}
       {...rest}
     />
   );

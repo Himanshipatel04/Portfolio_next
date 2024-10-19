@@ -1,5 +1,11 @@
 "use client";
 import learnify from "@/public/assets/learnify.png";
+import gofood from "@/public/assets/gofood.png";
+import bloghive from "@/public/assets/bloghive.png";
+import portfolioReact from "@/public/assets/portfolio-react.png";
+import taskmate from "@/public/assets/taskmate.png";
+import techhub from "@/public/assets/techhub.png";
+import portfolio from "@/public/assets/portfolio.png";
 // import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
@@ -15,40 +21,41 @@ const data = [
     link: "https://learnifyprojectapp.netlify.app/",
   },
   {
+    title: "GoFood",
+    src: gofood,
+    category: "MERN",
+    link: "",
+  },
+  {
     title: "BlogHive",
-    src: learnify,
+    src: bloghive,
     category: "MERN",
     link: "https://bloghive-lovat.vercel.app/",
   },
-  {
-    title: "GoFood",
-    src: learnify,
-    category: "MERN",
-    link: "",
-  },
+ 
   {
     title: "TaskMate",
-    src: learnify,
-    category: "MERN",
+    src: taskmate,
+    category: "React-Django",
     link: "",
   },
   {
-    title: "categoryHub",
-    src: learnify,
-    category: "MERN",
+    title: "TechHub",
+    src: techhub,
+    category: "NextJs",
+    link: "https://tech-hub-coral.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    src: portfolio,
+    category: "NextJs",
     link: "",
   },
   {
-    title: "Portfolio-Nextjs",
-    src: learnify,
-    category: "MERN",
-    link: "",
-  },
-  {
-    title: "Portfolio-Reactjs",
-    src: learnify,
-    category: "MERN",
-    link: "",
+    title: "Portfolio",
+    src: portfolioReact,
+    category: "React",
+    link: "https://himanship.vercel.app/",
   },
 ];
 

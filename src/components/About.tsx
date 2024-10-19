@@ -7,29 +7,30 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 // import Nav from "@/components/Nav";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
-const words = [{text:"About"},{text:"Me"}]
+const words = [{ text: "About" }, { text: "Me" }];
 
 function page() {
   return (
     <div className="h-fit px-2 md:px-0">
-     <div className="text-center mt-10 md:mt-20"> <TypewriterEffect words={words} /></div>
-      <TracingBeam className="px-6 mt-10 md:mt-20">
-        <div className="max-w-2xl mx-auto antialiased px-2 pt-4 relative">
+      <div className="text-center mt-10 md:mt-20">
+        {" "}
+        <TypewriterEffect words={words} />
+      </div>
+      <TracingBeam className="px-6 mt-10 md:mt-20  h-fit ">
+        <div className=" mx-auto antialiased px-2 pt-4 relative">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
               <h2 className="bg-black text-white rounded-full text-xl italic w-fit px-4 py-3 mb-4">
                 {item.badge}
               </h2>
-
-              {/* <p className={twMerge("text-xl  mb-4")}>{item.title}</p> */}
-
+              {/* <p className={twMerge("text-xl  mb-4")}>{item.title}</p>  */}
               <div className="text-md">
                 {item?.image && (
                   <Image
                     src={item.image}
                     alt="blog thumbnail"
-                    height="1000"
-                    width="1000"
+                    height="200"
+                    width="600"
                     className="rounded-lg mb-10 object-cover"
                   />
                 )}
@@ -93,9 +94,9 @@ const dummyContent = [
     description: (
       <>
         <p>
-          I&rsquo;m started pursuing my B.Tech. at IES College of Technology in
-          2022, where I&rsquo;m in the 5th semester with a CGPA of 8.3. <br />{" "}
-          My coursework and projects have helped me gain expertise in areas like
+          I started pursuing my B.Tech. at IES College of Technology in 2022,
+          where I&rsquo;m in the 5th semester with a CGPA of 8.3. <br /> My
+          coursework and projects have helped me gain expertise in areas like
           software development, web technologies, and backend systems.
           I&rsquo;ve actively participated in various technical events and
           innovation projects.

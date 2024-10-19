@@ -116,22 +116,22 @@ const Experience = () => {
         </div>
       ),
     },
-    {
-        title: "November 2022",
-        content: (
-          <div>
-            <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-2xl font-normal mb-4">
-              Started my Bachelors of Technology in CSE-Data Science at{" "}
-              <span className="italic font-bold text-blue-700">IES College of Technology,Bhopal.
-              </span>
-            </p>
-            <p className="text-xl italic">Bhopal, Madhya Pradesh</p>
-          </div>
-        ),
-      },
+    // {
+    //     title: "November 2022",
+    //     content: (
+    //       <div>
+    //         <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-2xl font-normal mb-4">
+    //           Started my Bachelors of Technology in CSE-Data Science at{" "}
+    //           <span className="italic font-bold text-blue-700">IES College of Technology,Bhopal.
+    //           </span>
+    //         </p>
+    //         <p className="text-xl italic">Bhopal, Madhya Pradesh</p>
+    //       </div>
+    //     ),
+    //   },
   ];
   return (
-    <div className="w-full ">
+    <div className="w-full h-fit ">
       <Timeline data={data} />
     </div>
   );

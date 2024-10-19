@@ -1,12 +1,11 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { TypewriterEffectSmooth } from "./typewriter-effect";
+import { TypewriterEffect } from "./typewriter-effect";
 
 interface TimelineEntry {
   title: string;
@@ -43,12 +42,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   ];
   return (
     <div
-      className="w-full bg-white dark:bg-gradient-to-b dark:from-black dark:to-neutral-800 font-sans md:px-10"
+      className="w-full h-fit  bg-white dark:bg-gradient-to-b dark:from-black dark:to-neutral-800 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl px-4 mx-auto mt-20">
-        <h2 className="text-4xl py-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-500 md:text-6xl mb-4  font-bold max-w-4xl">
-          <TypewriterEffectSmooth words={words} />
+      <div className="max-w-7xl px-4 mx-auto ">
+        <h2 className=" h-24 my-5 flex items-center justify-center bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-500 md:text-6xl font-bold ">
+          <TypewriterEffect words={words} />
         </h2>
       </div>
 

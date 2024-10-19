@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
 import { FloatingDock } from "./ui/floating-dock";
@@ -9,6 +10,7 @@ import {
   IconBrandX,
   IconMail,
 } from "@tabler/icons-react";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const links = [
   {
     title: "LinkedIn",
@@ -39,7 +41,7 @@ const links = [
     icon: (
       <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href:"mailto:himanship871@gmail.com",
+    href: "mailto:himanship871@gmail.com",
   },
 
   {
@@ -65,11 +67,26 @@ const Hero = () => {
           Hey There
           <br />
           <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-            <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
-              <span className="">I am Himanshi Patel.</span>
+            <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r  from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+              {/* <span className="">I am Himanshi Patel.</span> */}
+              <TypewriterEffectSmooth
+                words={[
+                  { text: "I" },
+                  { text: "am" },
+                  { text: "Himanshi" },
+                  { text: "Patel" },
+                ]}
+              />
             </div>
-            <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-              <span className="">I am Himanshi Patel.</span>
+            <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
+              <TypewriterEffectSmooth
+                words={[
+                  { text: "I" },
+                  { text: "am" },
+                  { text: "Himanshi" },
+                  { text: "Patel" },
+                ]}
+              />
             </div>
           </div>
         </h2>
