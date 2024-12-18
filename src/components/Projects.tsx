@@ -4,6 +4,8 @@ import gofood from "@/public/assets/gofood.png";
 import bloghive from "@/public/assets/bloghive.png";
 import portfolioReact from "@/public/assets/portfolio-react.png";
 import taskmate from "@/public/assets/taskmate.png";
+import eventpulse from "@/public/assets/eventpulse.png";
+import techpng from "@/public/assets/techpng.png";
 import techhub from "@/public/assets/techhub.png";
 import portfolio from "@/public/assets/portfolio.png";
 // import Image from "next/image";
@@ -21,10 +23,16 @@ const data = [
     link: "https://learnifyprojectapp.netlify.app/",
   },
   {
-    title: "GoFood",
-    src: gofood,
+    title: "TechPNG",
+    src: techpng,
+    category: "NextJs",
+    link: "https://techpng.vercel.app/",
+  },
+  {
+    title: "EventPulse",
+    src: eventpulse,
     category: "MERN",
-    link: "",
+    link: "https://github.com/Himanshipatel04/EventPulse",
   },
   {
     title: "BlogHive",
@@ -32,7 +40,12 @@ const data = [
     category: "MERN",
     link: "https://bloghive-lovat.vercel.app/",
   },
- 
+  {
+    title: "GoFood",
+    src: gofood,
+    category: "MERN",
+    link: "",
+  },
   {
     title: "TaskMate",
     src: taskmate,

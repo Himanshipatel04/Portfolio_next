@@ -2,7 +2,15 @@
 import Nav from "@/components/Nav";
 import { FocusCards } from "@/components/ui/focus-cards";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-import learnify from '@/public/assets/learnify.png'
+import learnify from "@/public/assets/learnify.png";
+import gofood from "@/public/assets/gofood.png";
+import bloghive from "@/public/assets/bloghive.png";
+import portfolioReact from "@/public/assets/portfolio-react.png";
+import taskmate from "@/public/assets/taskmate.png";
+import eventpulse from "@/public/assets/eventpulse.png";
+import techpng from "@/public/assets/techpng.png";
+import techhub from "@/public/assets/techhub.png";
+import portfolio from "@/public/assets/portfolio.png";
 
 function Projects() {
   const cards = [
@@ -10,48 +18,65 @@ function Projects() {
       title: "Learnify",
       src: learnify,
       tech: "MERN",
-      url:"https://learnifyprojectapp.netlify.app/"
+      url: "https://learnifyprojectapp.netlify.app/",
+    },
+    {
+      title: "TechPNG",
+      src: techpng,
+      tech: "NextJs",
+      url: "https://techpng.vercel.app/",
+    },
+    {
+      title: "EventPulse",
+      src: eventpulse,
+      tech: "MERN",
+      url: "https://github.com/Himanshipatel04/EventPulse",
     },
     {
       title: "BlogHive",
-      src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: bloghive,
       tech: "MERN",
-      url:"https://bloghive-lovat.vercel.app/"
+      url: "https://bloghive-lovat.vercel.app/",
     },
     {
       title: "GoFood",
-      src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: gofood,
       tech: "MERN",
+      url: "https://github.com/Himanshipatel04/goFood-f",
     },
     {
       title: "TaskMate",
-      src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      tech: "MERN",
+      src: taskmate,
+      tech: "React-Django",
+      url: "",
     },
     {
       title: "TechHub",
-      src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      tech: "MERN",
+      src: techhub,
+      tech: "NextJs",
+      url: "https://tech-hub-coral.vercel.app/",
     },
     {
-      title: "Portfolio-Nextjs",
-      src: "https://assets.aceternity.com/the-first-rule.png",
-      tech: "MERN",
+      title: "Portfolio",
+      src: portfolio,
+      tech: "NextJs",
+      url: "https://himanshi-psi.vercel.app/",
     },
     {
-      title: "Portfolio-Reactjs",
-      src: "https://assets.aceternity.com/the-first-rule.png",
-      tech: "MERN",
+      title: "Portfolio",
+      src: portfolioReact,
+      tech: "React",
+      url: "https://himanship.vercel.app/",
     },
   ];
 
   const words = [
-    {text: "Projects" }
+    { text: "Projects" }
   ]
 
   return (
     <div className="pt-20 md:pt-32 bg-gradient-to-r from-black to-neutral-800 max-h-fit">
-      <div className="px-52 text-6xl font-bold"><TypewriterEffect words={words}/></div>
+      <div className="px-52 text-6xl font-bold"><TypewriterEffect words={words} /></div>
       <Nav /> <FocusCards cards={cards} />
     </div>
   );

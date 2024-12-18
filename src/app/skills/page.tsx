@@ -4,11 +4,13 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import js from "@/public/assets/js.png";
 import pandas from "@/public/assets/Pandas.png";
 import numpy from "@/public/assets/numpy.png";
+import ts from "@/public/assets/typescript.png";
 import matplotlib from "@/public/assets/matplotlib.png";
 import seaborn from "@/public/assets/seab.png";
 import powerbi from "@/public/assets/bi.png";
 import c from "@/public/assets/pngwing.com.png";
 import py from "@/public/assets/python.png";
+import docker from "@/public/assets/docker.png";
 import cpp from "@/public/assets/c-.png";
 // import html from "@/public/assets/html-5.png";
 // import css from "@/public/assets/css.png";
@@ -39,7 +41,6 @@ const frameworks = [
   { id: 4, name: "Next.js", image: next },
   { id: 5, name: "Chakra UI", image: chakra },
   { id: 6, name: "Tailwind CSS", image: tailwind },
-  { id: 7, name: "Firebase", image: firebase },
 ];
 
 // Databases
@@ -47,11 +48,13 @@ const databases = [
   { id: 1, name: "MySQL", image: mysql },
   { id: 2, name: "MongoDB", image: mongodb },
   { id: 3, name: "SQLite", image: sqlite },
+  { id: 7, name: "Firebase", image: firebase },
 ];
 
 // Programming Languages
 const programmingLanguages = [
   { id: 1, name: "JavaScript", image: js },
+  { id: 2, name: "TypeScript", image: ts },
   { id: 2, name: "Python", image: py },
   { id: 3, name: "C++", image: cpp },
   { id: 4, name: "C", image: c },
@@ -74,6 +77,7 @@ const tools = [
   { id: 3, name: "VS Code", image: vscode },
   { id: 4, name: "JWT", image: jwt },
   { id: 5, name: "Zustand", image: zustand },
+  { id: 6, name: "Docker", image: docker },
 ];
 
 const words = [{ text: "Skills" }];
@@ -119,7 +123,7 @@ function Page() {
         {/* Data Science Section */}
         <div className="flex flex-col gap-6 mt-12">
           <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 italic">
-            Data Science
+            Data Science [Familarity]
           </p>
           <div className="grid md:grid-cols-6 grid-cols-2 md:gap-10 gap-20 items-center justify-center w-full">
             <AnimatedTooltip items={dataScience} />
