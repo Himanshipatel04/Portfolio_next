@@ -38,7 +38,7 @@ const data = [
     title: "BlogHive",
     src: bloghive,
     category: "MERN",
-    link: "https://bloghive-lovat.vercel.app/",
+    link: "https://blog-hive-web.vercel.app/",
   },
   {
     title: "GoFood",

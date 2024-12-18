@@ -36,7 +36,7 @@ function Projects() {
       title: "BlogHive",
       src: bloghive,
       tech: "MERN",
-      url: "https://bloghive-lovat.vercel.app/",
+      url: "https://blog-hive-web.vercel.app/",
     },
     {
       title: "GoFood",
