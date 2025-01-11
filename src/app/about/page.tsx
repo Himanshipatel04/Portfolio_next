@@ -8,7 +8,7 @@ import Nav from "@/components/Nav";
 
 function page() {
   return (
-    <div className="h-fit min-h-screen">
+    <div className="max-h-[2000px] min-h-screen">
       <Nav />
       <TracingBeam className="px-6 mt-36">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
