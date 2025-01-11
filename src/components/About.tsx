@@ -11,11 +11,11 @@ const words = [{ text: "About" }, { text: "Me" }];
 function page() {
   return (
     <div className="h-fit px-2 md:px-0">
-      <div className="text-center mt-10 md:mt-20">
+      <div className="text-center mt-10">
         {" "}
-        <TypewriterEffect words={words} />
+        <TypewriterEffect words={words} className="font-3xl" />
       </div>
-      <TracingBeam className="px-6 mt-10 md:mt-20  h-fit ">
+      <TracingBeam className="px-6 mt-10  h-fit ">
         <div className=" mx-auto antialiased px-2 pt-4 relative">
           {dummyContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
