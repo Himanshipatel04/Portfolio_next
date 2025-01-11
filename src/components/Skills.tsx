@@ -54,7 +54,7 @@ const databases = [
 // Programming Languages
 const programmingLanguages = [
   { id: 1, name: "JavaScript", image: js },
-  { id: 1, name: "TypeScript", image: ts },
+  { id: 5, name: "TypeScript", image: ts },
   { id: 2, name: "Python", image: py },
   { id: 3, name: "C++", image: cpp },
   { id: 4, name: "C", image: c },
